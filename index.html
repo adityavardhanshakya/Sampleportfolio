@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Vardhan - Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><Span class="name">Adi</Span>tya Vardhan</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#Services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                    <img class="icon"
+                        src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-cross-success-flatart-icons-lineal-color-flatarticons.png"
+                        width="45px" onclick="closeMenu()" />
+                </ul>
+                <img class="icon" src="https://img.icons8.com/nolan/64/menu.png" width="45px" onclick="openMenu()" />
+            </nav>
+            <div class="header-text">
+                <p>Python Developer</p>
+                <h1>Hello, I am <span>Aditya </span>Vardhan<br> who loves to code!</h1>
+                <img src="./images/insta1.png" id="image">
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/tom11.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello, I am Aditya Vardhan, from India. I grew up in Agra.
+                        I love to do code and watch movies in my free time.
+                        I am really a big fan of wrestling and i love to play Cricket.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="opentab('skiils')">Skills</p>
+                        <p class="tab-links" onClick="opentab('experience')">Interests</p>
+                        <p class="tab-links" onClick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skiils">
+                        <ul>
+                            <li><span>Python</span><br>&nbsp;&nbsp; &nbsp; – Hardcore Language</li>
+                            <li><span>Web Development</span><br>&nbsp;&nbsp; &nbsp; – Building Websites</li>
+                            <li><span>Problem Solving Skills</span><br>&nbsp;&nbsp; &nbsp; – Creative Thinker</li>
+                            <li><span>Teamwork</span><br>&nbsp;&nbsp; &nbsp; – Believe In Unity</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Listening to music</span><br>&nbsp;&nbsp;&nbsp; – Stress Buster</li>
+                            <li><span>Traveling</span><br>&nbsp;&nbsp;&nbsp; – Depresser</li>
+                            <li><span>Self-discipline</span><br>&nbsp;&nbsp;&nbsp; – Biggest Motivator</li>
+                            <li><span>Meditation</span><br>&nbsp;&nbsp;&nbsp; – Relieves Anxiety</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Dayalbagh Educational Institute</span>, Agra<br>&nbsp;&nbsp;&nbsp; – Enrolled In B.Voc (IoT)</li>
+                            <li><span>All Saints School</span>, Agra<br>&nbsp;&nbsp;&nbsp; – High School
+                                Education
+                            </li>
+                            <li><span>BBVM School</span>, Agra<br>&nbsp;&nbsp;&nbsp; – Primary
+                                Education
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----Services--------- -->
+    <!-- <div id="Services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nobis nostrum, tempore soluta
+                        dolorum eveniet dignissimos quaerat quam placeat laudantium, accusantium maxime natus quasi aut
+                        nulla quae ipsam eaque ex.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>app design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nobis nostrum, tempore soluta
+                        dolorum eveniet dignissimos quaerat quam placeat laudantium, accusantium maxime natus quasi aut
+                        nulla quae ipsam eaque ex.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>ui/ux design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nobis nostrum, tempore soluta
+                        dolorum eveniet dignissimos quaerat quam placeat laudantium, accusantium maxime natus quasi aut
+                        nulla quae ipsam eaque ex.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Score Keeper</h3>
+                        <p>It keeps the score for the ping pong game</p>
+                        <a href="https://github.com/adityavardhanshakya" target="_blank">🔗</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Drum Kit</h3>
+                        <p>Just drum drum drum</p>
+                        <a href="https://github.com/adityavardhanshakya" target="_blank">🔗</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work3.png" alt="">
+                    <div class="layer">
+                        <h3>Circle 2</h3>
+                        <p>Food Ordering Site</p>
+                        <a href="https://github.com/adityavardhanshakya" target="_blank">🔗</a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="https://github.com/adityavardhanshakya" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ---contact--- -->
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><img src="https://img.icons8.com/fluency/20/000000/gmail-new.png"/>  vardhan3098@gmail.com</p>
+                    <p><img src="https://img.icons8.com/fluency/20/000000/phone.png"/>  9760616249</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/addi_shakya"><img
+                                src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/adityavardhan3098/"><img
+                                src="https://img.icons8.com/color/48/000000/linkedin.png" /></a>
+                        <a href="https://github.com/adityavardhanshakya"><img
+                                src="https://img.icons8.com/color/48/000000/github--v1.png" /></a>
+                    </div>
+                    <a href="Profile.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="enter your name" required>
+                        <input type="email" name="Email" placeholder="enter your email address" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your message" required></textarea>
+                        <button class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Aditya Vardhan </p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzZJ4M1dxBsFxFTakABvwjkr_4bHMxSNnFJjB5itHZn7JBcn8906Fceh5FyotZ0Bm_m/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => form.reset())
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
